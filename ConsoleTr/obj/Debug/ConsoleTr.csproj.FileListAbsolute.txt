@@ -1,0 +1,7 @@
+C:\Users\OlehSt\source\repos\ConsoleTr\ConsoleTr\bin\Debug\ConsoleTr.exe.config
+C:\Users\OlehSt\source\repos\ConsoleTr\ConsoleTr\bin\Debug\ConsoleTr.exe
+C:\Users\OlehSt\source\repos\ConsoleTr\ConsoleTr\bin\Debug\ConsoleTr.pdb
+C:\Users\OlehSt\source\repos\ConsoleTr\ConsoleTr\obj\Debug\ConsoleTr.csprojAssemblyReference.cache
+C:\Users\OlehSt\source\repos\ConsoleTr\ConsoleTr\obj\Debug\ConsoleTr.csproj.CoreCompileInputs.cache
+C:\Users\OlehSt\source\repos\ConsoleTr\ConsoleTr\obj\Debug\ConsoleTr.exe
+C:\Users\OlehSt\source\repos\ConsoleTr\ConsoleTr\obj\Debug\ConsoleTr.pdb
