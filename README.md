@@ -1,0 +1,2 @@
+# TradingComp
+StockManager
