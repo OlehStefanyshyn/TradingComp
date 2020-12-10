@@ -1,0 +1,56 @@
+using System;
+using DAL.concrete;
+using DTO;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace DALTests
+{
+    [TestClass]
+    public class DALTest
+    {
+        private string connectionString = "Data Source=localhost;Initial Catalog=StockItems;Integrated Security=True";
+
+        [TestMethod]
+        public void GetAllStockItems()
+        {
+            StockItemsDAL a = new StockItemsDAL(connectionString);
+            var gl = a.GetAll();
+
+            Assert.IsTrue(gl.Count == 0 || gl[0].ID != -1);
+        }
+
+
+        [TestMethod]
+
+        public void FindTopic()
+        {
+            TopicDal a = new TopicDal(connectionString);
+            var gl = a.Find("Title");
+
+            Assert.IsTrue(gl.Count == 0 || gl[0].ID != -1);
+        }
+        [TestMethod]
+
+        public void AddItems()
+        {
+            StockItemsDAL a = new StockItemsDAL(connectionString);
+            StockItemsDAL st = new StockItemsDAL();
+            st.ID = 1;
+            st.StockItem = "stockitem";
+            st.Stock = "stock";
+            var res = a.Add(st);
+            Assert.IsTrue(res.ID == -1);
+        }
+        [TestMethod]
+
+        public void DeleteItems()
+        {
+            StockItemsDAL a = new StockItemsDAL(connectionString);
+            var res = a.Delete(3);
+            Assert.IsTrue(res != -1);
+
+
+        }
+
+    }
+}
