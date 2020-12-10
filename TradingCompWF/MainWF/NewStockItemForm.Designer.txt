@@ -1,0 +1,114 @@
+namespace MainWF
+{
+    partial class NewStockItemForm
+    {
+  
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.newItemName = new System.Windows.Forms.TextBox();
+            this.newItemPrice = new System.Windows.Forms.TextBox();
+            this.newItemOnStock = new System.Windows.Forms.TextBox();
+            this.newItemConfirmButton = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(39, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(39, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Name";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(39, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 24);
+            this.label3.TabIndex = 2;
+
+
+
+            this.newItemName.Location = new System.Drawing.Point(227, 80);
+            this.newItemName.Name = "newStockItemName";
+            this.newItemName.Size = new System.Drawing.Size(100, 22);
+            this.newItemName.TabIndex = 4;
+            // 
+            // newItemPrice
+            // 
+            this.newItemPrice.Location = new System.Drawing.Point(227, 142);
+            this.newItemPrice.Name = "newStockItemStock";
+            this.newItemPrice.Size = new System.Drawing.Size(100, 22);
+            this.newItemPrice.TabIndex = 5;
+  
+
+
+            this.newItemConfirmButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.newItemConfirmButton.Location = new System.Drawing.Point(128, 277);
+            this.newItemConfirmButton.Name = "newStockItemConfirmButton";
+            this.newItemConfirmButton.Size = new System.Drawing.Size(96, 41);
+            this.newItemConfirmButton.TabIndex = 7;
+            this.newItemConfirmButton.Text = "Confirm";
+            this.newItemConfirmButton.UseVisualStyleBackColor = true;
+            this.newItemConfirmButton.Click += new System.EventHandler(this.newItemConfirmButton_Click);
+            // 
+            // newItemForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(381, 354);
+            this.Controls.Add(this.newItemConfirmButton);
+            this.Controls.Add(this.newItemOnStock);
+            this.Controls.Add(this.newItemPrice);
+            this.Controls.Add(this.newItemName);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "newStockItemForm";
+            this.Text = "New Stock Item";
+            this.Load += new System.EventHandler(this.newItemForm_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox newStockItemName;
+        private System.Windows.Forms.TextBox newStockItemPrice;
+        private System.Windows.Forms.Button newStockItemConfirmButton;
+    }
+}

@@ -1,0 +1,60 @@
+﻿    <Window x:Class="TradingCompWPF.AddListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TradingCompWPF"
+        mc:Ignorable="d"
+        StockItem="AddListWindow" Background="White" Height="400" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TabControl Grid.Row="0" Grid.Column="0">
+            <TabItem Header="SList Information">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Stock="StockItem" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="10" />
+                    <TextBlock Stock="Stock" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="10" />
+ 
+
+                    <TextBox Stock="{Binding Path=Topic.StockItem}" FontSize="20"  Grid.Row="0" Grid.Column="1" Margin="10" />
+                    <ComboBox Grid.Row="1" 
+                          Grid.Column="1" 
+                          Margin="10" 
+                             
+                          ItemsSource="{Binding Path=Genres}" 
+                          DisplayMemberPath="Stock" 
+                          SelectedValuePath="GenreID" 
+                          SelectedValue="{Binding Path=Movie.GenreID}" />
+                   
+                    <TextBox Stock="{Binding Path=Movie.Year}" FontSize="20" Grid.Row="2" Grid.Column="1" Margin="10" />
+
+                </Grid>
+            </TabItem>
+            
+
+        </TabControl>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Center">
+            <Button Content="Cancel" Background="Transparent" IsCancel="True" Width="150" Margin="20" Click="Button_Click" />
+            <Button Content="Save" Background="Transparent" Width="150" Click="btnSave_Click" Margin="20" />
+        </StackPanel>
+    </Grid>
+</Window>
